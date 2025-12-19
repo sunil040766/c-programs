@@ -1,0 +1,73 @@
+#include <stdio.h> 
+#include <math.h> 
+int main() { 
+    double radius, area; 
+    printf("Enter the radius of the circle: "); 
+    scanf("%lf", &radius); 
+ 
+    if (radius >= 0) { 
+        area = M_PI * pow(radius, 2); 
+        printf("Area of the circle: %.2lf\n", area); 
+    } else { 
+        printf("Invalid input. Radius cannot be negative.\n"); 
+    } 
+ 
+    return 0; 
+} 
+Area of the square:- 
+#include <stdio.h> 
+ 
+int main() { 
+    double side, area; 
+ 
+    printf("Enter the side length of the square: "); 
+    scanf("%lf", &side); 
+ 
+    if (side >= 0) { 
+        area = side * side; 
+        printf("Area of the square: %.2lf\n", area); 
+    } else { 
+        printf("Invalid input. Side length cannot be negative.\n"); 
+    } 
+ 
+    return 0;
+	Area of Rectangle:- 
+ 
+#include <stdio.h> 
+ 
+int main() { 
+    double length, width, area; 
+ 
+    printf("Enter the length of the rectangle: "); 
+    scanf("%lf", &length); 
+    printf("Enter the width of the rectangle: "); 
+    scanf("%lf", &width); 
+ 
+    if (length >= 0 && width >= 0) { 
+        area = length * width; 
+        printf("Area of the rectangle: %.2lf\n", area); 
+    } else { 
+        printf("Invalid input. Length and width cannot be negative.\n"); 
+    } 
+ 
+    return 0; 
+}
+Area of a Triangle: 
+#include <stdio.h> 
+ 
+int main() { 
+    double base, height, area; 
+ 
+    printf("Enter the base of the triangle: "); 
+    scanf("%lf", &base); 
+    printf("Enter the height of the triangle: "); 
+    scanf("%lf", &height); 
+ 
+    if (base >= 0 && height >= 0) { 
+        area = 0.5 * base * height; 
+        printf("Area of the triangle: %.2lf\n", area); 
+    } else { 
+        printf("Invalid input. Base and height cannot be negative.\n"); 
+    } 
+    return 0; 
+} 
